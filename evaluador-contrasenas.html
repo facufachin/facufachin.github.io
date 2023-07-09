@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluador de Fortaleza de Contraseñas</title>
+    
+    <script type="text/javascript" src="/zxcvbn.js"></script>
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <header>
+        <h1>El sitio web del facufachin</h1>
+        <nav>
+            <a href="/">Hogar</a> /
+            <a href="/evaluador-contrasenas.html">evaluador de fortaleza de contraseña</a> /
+            <a href="https://newcss.net/usage/elements/">Elements</a> /
+            <a href="https://newcss.net/themes/">Themes</a> /
+            <a href="https://github.com/facufachin/facufachin.github.io">github de la pagina</a> / 
+            <a href="https://discord.gg/hhuuC4w">Discord</a> 
+        </nav>
+    </header>
+      
+</head>
+<body>
+    <h1>Evaluador de Fortaleza de Contraseñas</h1>
+  
+    <form id="passwordForm">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" onkeyup="checkPasswordStrength()">
+    </form>
+
+    <div class="result" id="passwordStrength"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
