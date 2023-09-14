@@ -3,18 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogar</title>
-    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-    <header>
-        <h1>El sitio web del facufachin</h1>
-        <nav>
-            <a href="/">Hogar</a> /
-            <a href="/evaluador-contrasenas.html">evaluador de fortaleza de contraseña</a>
-        </nav>
-    </header>  
+    <title>Lista ESSID:Contraseña</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #555;
+        }
+        
+        .copy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 2px 2px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <p>Sitio Web Facherin 😎😎😎😎</p>
+    <h1>Lista BSSID:Contraseña</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>BSSID</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ACUARIO</td>
+                <td>06021969</td>
+                <td><button class="copy-button" onclick="copyToClipboard('06021969')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>ACUARIO-5GHz</td>
+                <td>06021969</td>
+                <td><button class="copy-button" onclick="copyToClipboard('06021969')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>Alice in WonderLAN</td>
+                <td>b3_qui3t!</td>
+                <td><button class="copy-button" onclick="copyToClipboard('b3_qui3t!')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>LabOficina</td>
+                <td>RamosLab2022</td>
+                <td><button class="copy-button" onclick="copyToClipboard('RamosLab2022')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>MovistarFibra-815A30</td>
+                <td>speedy2022</td>
+                <td><button class="copy-button" onclick="copyToClipboard('speedy2022')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>Picasburgers-5GHz</td>
+                <td>Picasramos</td>
+                <td><button class="copy-button" onclick="copyToClipboard('Picasramos')">Copiar Contraseña</button></td>
+            </tr>
+            <tr>
+                <td>WIFI Parroquial</td>
+                <td>Jesus85841444</td>
+                <td><button class="copy-button" onclick="copyToClipboard('Jesus85841444')">Copiar Contraseña</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function copyToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Contraseña copiada al portapapeles: " + text);
+        }
+    </script>
 </body>
 </html>
